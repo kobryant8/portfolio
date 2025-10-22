@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나의 포트폴리오</title>
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">My&nbsp;Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#portfolio">포트폴리오</a></li>
+        <li><a href="#skills">스킬</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <header class="hero" id="home">
+    <div class="hero-overlay">
+      <h1>안녕하세요</h1>
+      <p>영상편집, 디자인, 기획력을 겸비한 주형준 입니다.</p>
+      <a href="#portfolio" class="btn">포트폴리오&nbsp;보기</a>
+    </div>
+  </header>
+
+  <!-- Portfolio section -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <h2>포트폴리오</h2>
+      <!-- Carousel wrapper -->
+      <div class="carousel" role="region" aria-roledescription="carousel" aria-label="포트폴리오 슬라이더">
+        <!-- Previous button -->
+        <button class="carousel-control prev" aria-label="이전 슬라이드">&#9664;</button>
+        <!-- Slides container: dynamically populated by script.js -->
+        <div class="slides"></div>
+        <!-- Next button -->
+        <button class="carousel-control next" aria-label="다음 슬라이드">&#9654;</button>
+      </div>
+      <!-- Navigation dots: dynamically populated by script.js -->
+      <div class="carousel-dots" aria-label="슬라이드 선택"></div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2>스킬</h2>
+      <ul class="skills-list">
+        <li>영상 편집&nbsp;&amp;&nbsp;모션 그래픽</li>
+        <li>색 보정&nbsp;&amp;&nbsp;음향 편집</li>
+        <li>영상 및 디자인 툴: Photoshop, Illustrator, After Effects, Premiere&nbsp;Pro, Davinci Resolve, Blender, Indesign</li>
+        <li>프론트엔드: HTML, CSS, JavaScript, React</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2>연락하기</h2>
+      <p>프로젝트 또는 협업 문의는 언제든지 환영합니다. 아래 연락처로 연락해주세요.</p>
+      <p>
+        <strong>이메일:</strong>
+        <p>melomagicball@gmail.com</p>
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Load portfolio data before initializing the carousel -->
+  <script src="portfolio-data.js"></script>
+  <!-- JavaScript for carousel functionality and dynamic generation -->
+  <script src="script.js"></script>
+</body>
+</html>
